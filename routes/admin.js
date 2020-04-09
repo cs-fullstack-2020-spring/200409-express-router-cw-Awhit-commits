@@ -15,10 +15,12 @@ router.delete('/user/:id',(req,res)=>{
 
 })
 
+
 router.put('/user/:id',(req,res)=>{
     let jsonApi = {id:req.params.id,
     description:"Mock description",
 price:"$9.99"}
+// this should be coming from postman
 res.send(jsonApi)
 
 
